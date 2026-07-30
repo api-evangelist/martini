@@ -1,22 +1,116 @@
 aid: martini
 name: Martini
-description: Martini is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Martini is a collaborative, AI-native filmmaking platform — "Figma for filmmaking" —
+  that lets teams generate, direct, and edit AI video in real time and export to
+  professional editing software (Adobe Premiere Pro, DaVinci Resolve) via XML. Filmmakers
+  compose shots with virtual camera control, keep characters consistent across shots using
+  reusable Subjects, and generate footage across leading models (Google Veo 3.1, Kling 3.0
+  Pro, OpenAI Sora 2, MiniMax Hailuo 02, ByteDance Seedance, Nano Banana Pro, Flux 2). Its
+  developer surface is a hosted, OAuth-secured Model Context Protocol (MCP) connector at
+  https://www.martini.film/mcp that lets AI assistants (Claude Desktop/Code, Gemini CLI,
+  ChatGPT, Cursor) browse projects, organize canvases and subjects, upload references, and
+  run approved generation inside a user's own account. Martini also publishes open Agent
+  Skills on GitHub, including a Blender-to-Martini camera-faithful handoff. Built by C47
+  Inc.; Y Combinator Winter 2026.
 url: https://raw.githubusercontent.com/api-evangelist/martini/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://www.martini.film/marketing/uisample-3.jpg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - y-combinator
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-yc-batch: Winter 2026
+x-company: C47 Inc.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- Artificial Intelligence
+- Video
+- Filmmaking
+- Generative AI
+- Creative Tools
+- Model Context Protocol
+- Agents
+- Collaboration
+- Media Production
+apis:
+- name: Martini MCP Connector
+  description: >-
+    Hosted, OAuth-secured Model Context Protocol server that lets supported AI assistants
+    work inside Martini projects using the signed-in user's account permissions — browse
+    projects, canvases, subjects and assets, organize the canvas, upload image references,
+    and run approved (user-confirmed) media generation. Streamable HTTP transport.
+  humanURL: https://www.martini.film/docs/mcp
+  baseURL: https://www.martini.film/mcp
+  tags:
+  - Model Context Protocol
+  - Agents
+  - AI Video
+  properties:
+  - type: MCPServer
+    url: mcp/martini-mcp.yml
+  - type: Documentation
+    url: https://www.martini.film/docs/mcp
+  - type: Authentication
+    url: authentication/martini-authentication.yml
+common:
+- type: Documentation
+  url: https://www.martini.film/docs/mcp
+- type: APIReference
+  url: https://www.martini.film/docs/mcp
+- type: Pricing
+  url: https://www.martini.film/pricing
+- type: SignUp
+  url: https://www.martini.film/waitlist
+- type: Login
+  url: https://www.martini.film/login
+- type: Support
+  url: https://www.martini.film/support
+- type: TermsOfService
+  url: https://www.martini.film/terms
+- type: PrivacyPolicy
+  url: https://www.martini.film/privacy
+- type: GitHubOrganization
+  url: https://github.com/martini-film
+- type: Download
+  url: https://www.martini.film/download
+- type: MCPServer
+  url: mcp/martini-mcp.yml
+- type: LLMsTxt
+  url: llms/martini-llms.txt
+- type: AgentSkill
+  url: skills/_index.yml
+- type: Authentication
+  url: authentication/martini-authentication.yml
+- type: Conformance
+  url: conformance/martini-conformance.yml
+- type: Security
+  url: https://www.martini.film/security
+- type: VulnerabilityDisclosure
+  url: security/martini-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/martini-domain-security.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 11
+  pass: local-v1
