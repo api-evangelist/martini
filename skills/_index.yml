@@ -1,0 +1,35 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/martini-film/skills
+notes: >-
+  Provider-published Agent Skills saved verbatim from github.com/martini-film/skills.
+  Both operate Martini through its hosted MCP connector (mcp/martini-mcp.yml); every tool
+  name referenced in the skills is a real Martini MCP tool.
+skills:
+- file: martini-films.md
+  name: Making films with Martini
+  api: mcp/martini-mcp.yml
+  source: https://github.com/martini-film/skills/blob/HEAD/martini-skills/SKILL.md
+  operations:
+  - get_projects
+  - get_board_scenes
+  - get_board_subjects
+  - list_models
+  - get_model
+  - create_node_and_generate
+  - get_job_status
+  - view_asset
+  companion: martini-films-playbook.md
+- file: martini-blender-to-martini.md
+  name: Blender to Martini
+  api: mcp/martini-mcp.yml
+  source: https://github.com/martini-film/skills/blob/HEAD/blender-to-martini/SKILL.md
+  operations:
+  - get_projects
+  - create_project
+  - get_board_overview
+  - create_canvas
+  - upload_assets_prepare
+  - prepare_blender_camera_path_upload
+  - upload_assets_complete
+  - render_blender_take

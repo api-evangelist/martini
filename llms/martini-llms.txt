@@ -1,0 +1,72 @@
+# Martini - Collaborative AI Filmmaking Platform
+
+> Martini is a collaborative filmmaking tool for AI video - like Figma for filmmaking. Generate and edit AI video shots in real-time with your team, then export to professional editing software.
+
+## What is Martini?
+
+Martini is a collaborative filmmaking tool that brings Figma-style real-time collaboration to AI video production. It's designed for filmmakers who want to:
+
+- Generate AI video shots using Veo 3, Kling, Sora, and other leading models
+- Collaborate in real-time with team members (live cursors, instant sync)
+- Edit and arrange clips on a professional timeline in the browser
+- Export projects as XML for Adobe Premiere Pro, DaVinci Resolve, and other NLEs
+
+## Why "Figma for Filmmaking"?
+
+Like Figma revolutionized design collaboration, Martini brings the same real-time multiplayer experience to video production:
+
+- Multiple team members can work on the same project simultaneously
+- See collaborators' cursors and selections in real-time
+- Changes sync instantly across all connected users
+- No file conflicts or version management headaches
+
+## Key Features
+
+- **Collaborative Editing**: Real-time multiplayer timeline editing with live cursors
+- **Multi-Model AI Generation**: Access Veo 3.1, Kling 3.0 Pro, Kling O3 Pro, Sora 2, and more in one interface
+- **Professional Timeline**: Full-featured video editing timeline in the browser
+- **Start & End Frame Control**: Precise editorial control with Veo 3.1, Kling 3.0 Pro, Kling O3 Pro, Kling O1, Hailuo 02, and Seedance 1.5
+- **XML Export**: Seamless roundtrip to Adobe Premiere Pro, DaVinci Resolve
+
+## Supported AI Video Models
+
+### Video Generation
+- Veo 3.1 / Veo 3.1 Fast (Google DeepMind) - Start frame, End frame, Audio
+- Kling 3.0 Pro (Kuaishou) - Start frame, End frame, Audio, Elements, Multi-shot
+- Kling O3 Pro (Kuaishou) - Start frame, End frame, Audio, Multi-shot
+- Kling 2.6 (Kuaishou) - Start frame, Audio
+- Kling O1 (Kuaishou) - Start frame, End frame
+- Sora 2 Pro (OpenAI) - Start frame, Audio
+- Hailuo 02 (MiniMax) - Start frame, End frame
+- Seedance 1.5 (ByteDance) - Start frame, End frame, Audio
+- Grok Imagine (xAI) - Start frame
+
+### Still Image / Editing
+- Nano Banana Pro (Google)
+- Flux 2 Max (BFL)
+
+## Use Cases
+
+- **Film Pre-Production**: Generate AI video storyboards and animatics collaboratively
+- **Advertising & Commercial**: Teams can iterate on AI-generated concepts together
+- **Music Videos**: Real-time collaboration on AI-generated visual sequences
+- **Content Creation**: Streamlined team workflows for AI video content
+
+## Pricing
+
+Pay-per-use with credits (Olives). 1 Olive = $0.10 USD.
+
+Video generation: $0.10 - $0.65 per second depending on model.
+Still generation: $0.10 per generation.
+
+## Links
+
+- Website: https://www.martini.film
+- Supported Models: https://www.martini.film/supported-models
+- Pricing: https://www.martini.film/pricing
+- Join Early Access: https://www.martini.film/waitlist
+
+## Company
+
+Martini is developed by C47 Inc.
+Contact: koh@c47.studio

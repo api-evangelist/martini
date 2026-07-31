@@ -1,0 +1,78 @@
+generated: '2026-07-20'
+method: searched
+status: published
+source: https://www.martini.film/docs/mcp
+server:
+  name: martini
+  transport: http            # Streamable HTTP (remote/hosted)
+  url: https://www.martini.film/mcp
+  auth: oauth2               # OAuth-based authorization; tool calls run with the
+                             # signed-in user's Martini project permissions
+  install:
+    claude_code: claude mcp add --transport http --scope user martini https://www.martini.film/mcp
+  clients:
+  - Claude Desktop & Web (connector settings)
+  - Claude Code
+  - Gemini CLI (Martini extension)
+  - ChatGPT
+  - OpenClaw
+  - Hermes Agent
+  - Cursor
+  - Any client supporting hosted MCP / Streamable HTTP
+notes: >-
+  Hosted, OAuth-secured MCP connector. Assistants can only use projects, assets, credits,
+  and generation actions the signed-in account already has, and media generation always
+  requires explicit user approval (spends "olive" credits = real money). Projects cannot be
+  created over MCP — the user creates them in the Martini app. Tool names below are grounded
+  in Martini's own published Agent Skills at github.com/martini-film/skills (verified, not
+  invented). A live GET to the endpoint returns HTTP 401 "Authentication required".
+tools:
+# --- Read / browse ---
+- name: get_projects
+  description: List the user's Martini projects.
+- name: get_board_scenes
+  description: List scenes (canvases) in a project.
+- name: get_board_overview
+  description: Read a project board overview.
+- name: get_board_canvases
+  description: List canvases in a project.
+- name: get_board_subjects
+  description: List reusable Subjects (characters, props, animals, locations, costumes, effects).
+- name: list_models
+  description: List available generation models and their current IDs.
+- name: get_model
+  description: Read a model's constraints (inputs, element/image limits, aspect ratios, resolutions).
+- name: get_job_status
+  description: Poll the status of an async generation job.
+- name: list_project_jobs
+  description: List generation jobs in a project.
+- name: view_asset
+  description: Inline an image asset so the assistant can review it (image-only, 10 MB cap).
+- name: get_asset_download_url
+  description: Get a download URL to save an asset to disk.
+- name: check_storage_reachability
+  description: Verify storage (upload/download) reachability before the first transfer.
+# --- Organize / author ---
+- name: create_scene
+  description: Create a new scene (canvas) in a project.
+- name: create_canvas
+  description: Create a canvas.
+- name: create_node
+  description: Create an empty placeholder node on the canvas.
+- name: create_nodes
+  description: Create multiple empty placeholder nodes.
+- name: create_text_note
+  description: Add a text note to the canvas.
+# --- Generate (spends credits; requires user approval) ---
+- name: create_node_and_generate
+  description: Create a shot node and start its generation job in one step (video or image).
+# --- Uploads ---
+- name: upload_assets_prepare
+  description: Get presigned R2 PUT URLs to upload image references (up to 50 at a time).
+- name: upload_assets_complete
+  description: Finalize prepared uploads so assets land as first-class nodes.
+# --- Blender-to-Martini handoff ---
+- name: prepare_blender_camera_path_upload
+  description: Presign the camera-path sidecar upload for a Blender guide asset.
+- name: render_blender_take
+  description: Import a Blender guide take as a camera-faithful, editable draft shot in Martini.

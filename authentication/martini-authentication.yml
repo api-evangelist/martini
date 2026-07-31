@@ -1,0 +1,21 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.martini.film/docs/mcp
+docs: https://www.martini.film/security
+summary:
+  types: [oauth2]
+  oauth2_flows: [authorizationCode]
+  surface: mcp
+notes: >-
+  Martini has no traditional public REST/OpenAPI surface; its programmatic surface is the
+  hosted MCP connector. Per the MCP docs and /security page, the connector uses OAuth-based
+  authorization where supported: an assistant connects once, the user signs in, and every
+  MCP tool call runs with the same Martini project permissions as the signed-in user.
+  Browser-based MCP requests are restricted to allowed origins. A live GET to the MCP
+  endpoint returns HTTP 401 "Authentication required". No API-key scheme is documented.
+schemes:
+- name: MartiniMCPOAuth
+  type: oauth2
+  flow: authorizationCode
+  applies_to: https://www.martini.film/mcp
+  sources: [https://www.martini.film/docs/mcp]
