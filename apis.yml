@@ -94,6 +94,8 @@ apis:
   - type: Authentication
     url: authentication/martini-authentication.yml
 common:
+- type: Website
+  url: https://www.martini.film/
 - type: Documentation
   url: https://www.martini.film/docs/mcp
 - type: APIReference
