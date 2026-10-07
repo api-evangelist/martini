@@ -1,0 +1,57 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://www.martini.film/pricing
+sources:
+- https://www.martini.film/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: tiered-subscription
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+  managed_tier: Pro $30/mo
+published: true
+note: 'Pricing page for AI filmmaking platform: subscription tiers plus detailed per-model, per-second
+  olive credit rates (e.g. Veo 3.1 1080p no audio $0.18/s). Olives roll over 12 months; no per-seat pricing.'
+plan_count: 5
+currency: USD
+plans:
+- name: Indie
+  price_text: Free
+  currency: USD
+  period: month
+  unit: plan
+  included_quota: $0 monthly credits; access to all models; commercial license
+  overage: Every $10 top-up adds 100 olives
+- name: Pro
+  price_text: $30/mo
+  price: 30
+  currency: USD
+  period: month
+  unit: plan
+  included_quota: 300 olives/mo ≈ 37 clips every month
+  overage: Every $10 top-up adds 100 olives
+- name: Studio
+  price_text: $150/mo
+  price: 150
+  currency: USD
+  period: month
+  unit: plan
+  included_quota: 1,500 olives/mo ≈ 187 clips every month; project-based billing
+  overage: Every $10 top-up adds 100 olives
+- name: Enterprise
+  price_text: Custom
+  period: none
+  included_quota: Bespoke credits
+- name: Olive credit unit
+  price_text: 1 = $0.10 USD
+  price: 0.1
+  currency: USD
+  period: per-use
+  unit: olive
+  included_quota: One 8-second clip costs 8 olives ($0.80)
