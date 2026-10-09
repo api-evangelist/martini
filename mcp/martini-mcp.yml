@@ -75,3 +75,16 @@ deployment:
   probe: gated
   checked: '2026-08-12'
   source: catalog MCP census
+rfc9728:
+  endpoint: https://www.martini.film/mcp
+  metadata_url: https://www.martini.film/.well-known/oauth-protected-resource
+  discovered_via: WWW-Authenticate resource_metadata on an anonymous POST initialize
+  fetched: '2026-09-25'
+  http_status: 200
+  content_type: application/json
+  document:
+    resource: https://www.martini.film/mcp
+    authorization_servers:
+    - https://qccjhofczngztnljyqqr.supabase.co/auth/v1
+    bearer_methods_supported:
+    - header
