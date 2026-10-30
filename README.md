@@ -64,6 +64,109 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Martini is a company surfaced as a portfolio company of y-combinator and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Martini is a collaborative, AI-native filmmaking platform — "Figma for filmmaking" — that lets teams generate, direct, and edit AI video in real time and export to professional editing software (Adobe Premiere Pro, DaVinci Resolve) via XML. Filmmakers compose shots with virtual camera control, keep characters consistent across shots using reusable Subjects, and generate footage across leading models (Google Veo 3.1, Kling 3.0 Pro, OpenAI Sora 2, MiniMax Hailuo 02, ByteDance Seedance, Nano Banana Pro, Flux 2). Its developer surface is a hosted, OAuth-secured Model Context Protocol (MCP) connector at https://www.martini.film/mcp that lets AI assistants (Claude Desktop/Code, Gemini CLI, ChatGPT, Cursor) browse projects, organize canvases and subjects, upload references, and run approved generation inside a user's own account. Martini also publishes open Agent Skills on GitHub, including a Blender-to-Martini camera-faithful handoff. Built by C47 Inc.; Y Combinator Winter 2026.
 
-Backed by: y-combinator
+**Areas:** Company · Artificial Intelligence · Video · Filmmaking · Generative AI · Creative Tools · MCP · Agents · Collaboration · Media Production
+
+## Martini on APIs.io
+
+Everything profiled for Martini is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/martini/](https://apis.io/providers/martini/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Martini MCP Connector](https://apis.io/apis/martini/martini-mcp-connector/) — Hosted, OAuth-secured Model Context Protocol server that lets supported AI assistants work inside Martini projects using the signed-in user's account…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [martini](https://apis.io/servers/martini/martini/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Martini Authentication](https://apis.io/security/martini/martini-authentication/)
+- [Martini Domain Security](https://apis.io/security/martini/martini-domain-security/)
+- [Martini Vulnerability Disclosure](https://apis.io/security/martini/martini-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Martini Plans Pricing](https://apis.io/plans/martini/martini-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.martini.film/)
+- [Documentation](https://www.martini.film/docs/mcp)
+- [API reference](https://www.martini.film/docs/mcp)
+- [Pricing](https://www.martini.film/pricing)
+- [Sign up](https://www.martini.film/waitlist)
+- [Support](https://www.martini.film/support)
+- [Blog](https://www.martini.film/blog)
+- [Security](https://www.martini.film/security)
+- [Terms of service](https://www.martini.film/terms)
+- [Privacy policy](https://www.martini.film/privacy)
+- [GitHub](https://github.com/martini-film)
+
+## API Evangelist rating
+
+**Kin Score 20.7** — emerging · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 0.0 |
+| Contract governance | 4.5 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 21.4 |
+| Access clarity | 38.2 |
+
+**Agent readiness 30.9** — agent-ready
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | yes |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 20.9** — AI & Biometrics
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/martini/](https://apis.io/providers/martini/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Martini: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/martini/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
